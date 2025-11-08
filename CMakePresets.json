@@ -114,10 +114,10 @@
             "cacheVariables"  : {"ARCH":"aarch64", "OS":"linux"}
         },
         {
-            "name"            : "rpi3bp",
+            "name"            : "rpi3",
             "inherits"        : "aarch64",
             "hidden"          : false,
-            "cacheVariables"  : {"HW":"rpi3bp", "CPU":"bcm2837"}
+            "cacheVariables"  : {"HW":"rpi3", "CPU":"bcm2837"}
         },
         {
             "name"            : "pc",
