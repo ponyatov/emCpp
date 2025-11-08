@@ -10,3 +10,4 @@
 - github: https://github.com/ponyatov/emCpp
 
 ![[emCpp/ai]]
+![[emCpp/bib]]

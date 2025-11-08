@@ -36,9 +36,3 @@ include mk/ai.mk
 # include mk/rule.mk
 # include mk/squid.mk
 # include mk/ts.mk
-
-touch hw/pc/pc.{mk,cmake}
-touch cpu/i5/i5.{mk,cmake}
-touch arch/x86_64/x86_64.{mk,cmake}
-touch os/linux/linux.{mk,cmake}
-
