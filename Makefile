@@ -1,1 +1,1 @@
-touch .gitignore
+find ~/em/.vscode/*.json >> Makefile
