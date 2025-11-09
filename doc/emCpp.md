@@ -11,3 +11,6 @@
 
 ![[emCpp/ai]]
 ![[emCpp/bib]]
+![[emCpp/auth]]
+![[emCpp/draft]]
+![[emCpp/toc|toc]]
