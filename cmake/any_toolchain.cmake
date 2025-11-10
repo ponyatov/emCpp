@@ -41,8 +41,7 @@ add_compile_options(
 )
 
 add_compile_definitions(
-    ${APP_} APP="${APP}"
-    ${HW_} ${CPU_} ${ARCH_} ${OS_}
+    ${APP_} APP="${APP}" ${HW_} ${CPU_} ${ARCH_} ${OS_}
 )
 
 add_link_options(

@@ -2,46 +2,10 @@
     "version": 6,
     "buildPresets": [
         {
-            "name"            :  "pillF030",
-            "configurePreset" :  "pillF030",
-            "targets"         : ["all","install"]
-        },
-        {
-            "name"            :  "pillF103",
-            "configurePreset" :  "pillF103",
-            "targets"         : ["all","install"]
-        },
-        {
-            "name"            :  "iskra",
-            "configurePreset" :  "iskra",
-            "targets"         : ["all","install"]
-        },
-        {
-            "name"            :  "f429disco",
-            "configurePreset" :  "f429disco",
-            "targets"         : ["all","install"]
-        },
-        {
-            "name"            :  "rpi3",
-            "configurePreset" :  "rpi3",
-            "targets"         : ["all","install"]
-        },
-        {
-            "name"            :  "win32",
-            "configurePreset" :  "win32",
-            "targets"         : ["all","install"]
-        },
-        {
-            "name"            :  "linux/4",
+            "name"            :  "linux",
             "configurePreset" :  "linux",
             "targets"         : ["all","install"],
             "jobs"            :   4
-        },
-        {
-            "name"            :  "linux/24",
-            "configurePreset" :  "linux",
-            "targets"         : ["all","install"],
-            "jobs"            :   24
         }
     ],
     "configurePresets": [
@@ -60,77 +24,10 @@
             }
         },
         {
-            "name"            : "cortexm",
-            "inherits"        : "common",
-            "hidden"          : true,
-            "toolchainFile"   : "${sourceDir}/cmake/arm-none-eabi.cmake",
-            "cacheVariables"  : {"OS":"none"}
-        },
-        {
-            "name"            : "cortexm0",
-            "inherits"        : "cortexm",
-            "hidden"          : true,
-            "cacheVariables"  : {"ARCH":"cortexm0"}
-        },
-        {
-            "name"            : "cortexm3",
-            "inherits"        : "cortexm",
-            "hidden"          : true,
-            "cacheVariables"  : {"ARCH":"cortexm3"}
-        },
-        {
-            "name"            : "cortexm4",
-            "inherits"        : "cortexm",
-            "hidden"          : true,
-            "cacheVariables"  : {"ARCH":"cortexm4"}
-        },
-        {
-            "name"            : "pillF030",
-            "inherits"        : "cortexm0",
-            "cacheVariables"  : {"HW" :"pillF030",
-                                "CPU":"stm32f030f4", "SERIES": "STM32F0"}
-        },
-        {
-            "name"            :  "pillF103",
-            "inherits"        :  "cortexm3",
-            "cacheVariables"  : {"HW" :"pillF103",
-                                "CPU":"stm32f103c8", "SERIES": "STM32F1"}
-        },
-        {
-            "name"            : "iskra",
-            "inherits"        : "cortexm4",
-            "cacheVariables"  : {"HW" :"iskra",
-                                "CPU":"stm32f405rg", "SERIES": "STM32F4"}
-        },
-        {
-            "name"            : "f429disco",
-            "inherits"        : "cortexm4",
-            "cacheVariables"  : {"HW":"f429disco", "CPU":"stm32f429zi"}
-        },
-        {
-            "name"            : "aarch64",
-            "inherits"        : "common",
-            "hidden"          : true,
-            "cacheVariables"  : {"ARCH":"aarch64", "OS":"linux"}
-        },
-        {
-            "name"            : "rpi3",
-            "inherits"        : "aarch64",
-            "hidden"          : false,
-            "cacheVariables"  : {"HW":"rpi3", "CPU":"bcm2837"}
-        },
-        {
             "name"            : "pc",
             "inherits"        : "common",
             "hidden"          : true,
             "cacheVariables"  : {"HW":"pc", "CPU":"i5", "ARCH":"x86_64"}
-        },
-        {
-            "name"            : "win32",
-            "inherits"        : "pc",
-            "displayName"     : "i686-w64-mingw32",
-            "toolchainFile"   : "${sourceDir}/cmake/i686-w64-mingw32.cmake",
-            "cacheVariables"  : {"CPU":"i686", "ARCH":"i386", "OS":"win32"}
         },
         {
             "name"            : "linux",
